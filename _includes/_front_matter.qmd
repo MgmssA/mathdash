@@ -15,12 +15,6 @@ format:
         number-sections: true
         number-depth: 1
         number-offset: 0
-        nav-buttons: 
-            right:
-              - icon: github
-                href: https://github.com/
-                aria-label: GitHub
-        identifier-prefix: prefix
         include-in-header: _includes/_in_header.html
         # include-after-body: _includes/_after_body.html
         css: style/_style.css

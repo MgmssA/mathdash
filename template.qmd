@@ -5,8 +5,6 @@
 
 ## Row
 
-<!-- ### Introduction -->
-
 ::: {.card title="Application"}
 
 This template is appllicable to biology documents rendered in HTML via Quarto. This is a chemical $\ce{H2SO4 (aq)}$. The physical unit is $\jouleperkilogramperkelvin$. This is [green]{fg="green"}.
@@ -15,9 +13,23 @@ $$
 Q = n C\sub{p,m} \Delta T
 $$
 
-:::
+```{ojs}
+//| output: false
+arsch = 10;
 
-<!-- ### Elements -->
+```
+
+```{ojs}
+//| output: false
+wasser = arsch + 12;
+
+``` 
+
+The value is now `{ojs} wasser`.
+
+Arschwasser
+
+:::
 
 ```{mermaid}
 %%| title: Arsch

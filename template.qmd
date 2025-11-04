@@ -1,0 +1,63 @@
+{{< include _includes/_front_matter.qmd >}}
+{{< include _includes/_init_fontawesome.qmd >}} 
+{{< include _includes/_katex_macros.qmd >}} 
+{{< include _includes/_r_themes.qmd >}}
+
+## Row
+
+<!-- ### Introduction -->
+
+::: {.card title="Application"}
+
+This template is appllicable to biology documents rendered in HTML via Quarto. This is a chemical $\ce{H2SO4 (aq)}$. The physical unit is $\jouleperkilogramperkelvin$. This is [green]{fg="green"}.
+
+$$
+Q = n C\sub{p,m} \Delta T
+$$
+
+:::
+
+<!-- ### Elements -->
+
+```{mermaid}
+%%| title: Arsch
+%%| fig-height: 3
+%%| label: fig-metabolism-equilibrium
+%%| fig-cap: Leben braucht irgendetwas was es zu etwas anderem umsetzt. Dieser Stoffwechsel ist einer der fundamentalen Eigenschaften des Lebens. 
+flowchart LR
+    Rein@{shape: circle} --> Leben@{shape: circ, label: "Leben"}
+    Leben --> Raus@{shape: circle}
+
+    style Rein fill:#F4F4E7,stroke:#F4F4E7;
+    style Leben stroke:#F4F4E7;
+    style Raus fill:#F4F4E7,stroke:#F4F4E7;
+```
+
+## Row
+
+<!-- ### More Information -->
+
+You can learn more about controlling the appearance of HTML output here: <https://quarto.org/docs/output-formats/html-basics.html>
+
+```{r}
+#| label: fig-number-ray
+#| fig-cap: "Der Zahlenstrahl"
+#| fig-height: 2
+
+# Sample data
+x <- rnorm(20)
+y <- rnorm(20)
+df <- data.frame(x, y)
+
+# Create the plot without the y-axis
+ggplot2::ggplot(df, ggplot2::aes(x, y)) +
+    ggplot2::geom_point() +
+    ggplot_theme +
+    ggplot2::theme(
+        axis.line.y = ggplot2::element_blank(),
+        axis.ticks.y = ggplot2::element_blank(),
+        axis.text.y = ggplot2::element_blank(),
+        axis.title.y = ggplot2::element_blank()
+    )
+```
+

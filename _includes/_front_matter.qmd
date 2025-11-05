@@ -1,15 +1,14 @@
 ---
-title: Document Title
-subtitle: Document type
+title: Parabel Parametrisierung
+subtitle: Einseiter
 date: 2100-10-10 
-# date-modified: 2100-10-10
 author: \| <small>Călin Aurel Drăgan</small>
 logo: style/mgmss_symbol_color.svg
 # bibliography: references.bib
 format: 
     mathdash-dashboard:
         # shift-heading-level-by: 1
-        orientation: rows
+        orientation: columns
         scrolling: false
         expandable: true
         number-sections: true
@@ -20,6 +19,6 @@ format:
         css: style/_style.css
         embed-resources: false
         self-contained-math: false
-# filters:
-#   - highlight-text
+filters:
+  - highlight-text
 ---

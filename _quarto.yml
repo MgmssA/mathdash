@@ -15,8 +15,7 @@ appendix-style: default
 brand: _brand.yml
 format:
     dashboard:
-        # css: style/_style.css
-        theme: 
+        theme:
           - style/_custom.scss
           - brand
 

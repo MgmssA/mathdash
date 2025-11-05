@@ -82,7 +82,7 @@ typography:
 
     base:
         family: Asap
-        size: 1.16em
+        # size: 1.1em
     headings:
         family: Oxanium
         color: ivory-shade-7

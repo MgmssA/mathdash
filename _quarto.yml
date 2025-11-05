@@ -15,10 +15,10 @@ appendix-style: default
 brand: _brand.yml
 format:
     dashboard:
-        css: style/_style.css
+        # css: style/_style.css
         theme: 
-          - brand
           - style/_custom.scss
+          - brand
 
 engine: knitr
 execute:

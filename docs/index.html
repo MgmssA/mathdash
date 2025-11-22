@@ -83,8 +83,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="index_files/libs/quarto-dashboard/web-components.js" type="module"></script>
 <script src="index_files/libs/quarto-dashboard/components.js"></script>
 
-<link href="index_files/libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
-<link href="index_files/libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
 <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.23/dist/contrib/mhchem.min.js" integrity="sha384-F2ptQFZqNJuqfGGl28mIXyQ5kXH48spn7rcoS0Y9psqIKAcZPLd1NzwFlm/bl1mH" crossorigin="anonymous"></script>
 <script type="module" src="index_files/libs/quarto-ojs/quarto-ojs-runtime.js"></script>
 <link href="index_files/libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
@@ -133,7 +131,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 <div class="page-layout-custom quarto-dashboard-content bslib-gap-spacing html-fill-container bslib-page-fill">  
 
-<!-- Initialize Fontawesome with any icon  -->
 <div class="hidden bslib-grid-item html-fill-item">
 <!-- Groundwork -->
 <p><span class="math display">
@@ -141,6 +138,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 \gdef\unit#1{\mathrm{#1}}
 </span> <!-- Physical units --> <span class="math display">
 \gdef\celsius{\unit{°C}}
+\gdef\gram{\unit{g}}
 \gdef\joule{\unit{J}}
 \gdef\kelvin{\unit{K}}
 \gdef\kilogram{\unit{kg}}
@@ -150,6 +148,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 \gdef\mole{\unit{mol}}
 \gdef\newton{\unit{N}}
 \gdef\pascal{\unit{Pa}}
+</span> <!-- Prefixed units --> <span class="math display">
+\gdef\kilojoule{\unit{k}\joule}
 </span> <!-- Exponentiated units --> <span class="math display">
 \gdef\squaremeter{\meter^2}
 \gdef\cubicmeter{\meter^3}
@@ -160,12 +160,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 \gdef\jouleperkelvin{\frac{\joule}{\kelvin}}
 \gdef\jouleperkilogramperkelvin{\frac{\joule}{\kilogram\,\kelvin}}
 \gdef\joulepermoleperkelvin{\frac{\joule}{\mole\,\kelvin}}
+\gdef\kilojouleperkilogram{\frac{\kilojoule}{\kilogram}}
+\gdef\kilojouleperkelvin{\frac{\kilojoule}{\kelvin}}
+\gdef\kilojouleperkilogramperkelvin{\frac{\kilojoule}{\kilogram\,\kelvin}}
+\gdef\kilojoulepermoleperkelvin{\frac{\kilojoule}{\mole\,\kelvin}}
 </span></p>
+</div>
+<div class="hidden bslib-grid-item html-fill-item">
+
 </div>
 <div class="bslib-grid-item html-fill-item bslib-grid" data-layout="fill" style="display: grid; grid-template-columns: minmax(3em, 40fr) minmax(3em, 60fr);
 grid-auto-rows: minmax(0, 1fr);">
 <div class="bslib-grid" style="display: grid; grid-template-rows: minmax(3em, max-content) minmax(3em, max-content); grid-auto-columns: minmax(0, 1fr);">
-<div class="card flow bslib-card html-fill-container" data-title="Allgemeine Scheitelpunktform" data-fill="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card flow bslib-card html-fill-container" data-fill="false" data-title="Allgemeine Scheitelpunktform" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
 <div class="card-header"><div class="card-title"><span style="display: inline">
 Allgemeine Scheitelpunktform
 </span></div></div>
@@ -249,7 +256,7 @@ y = (x - a)^2 + b.
 </div>
 </div>
 </div>
-<div class="card flow bslib-card html-fill-container" data-title="Spezifische Scheitelpunktform" data-fill="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card flow bslib-card html-fill-container" data-fill="false" data-title="Spezifische Scheitelpunktform" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
 <div class="card-header"><div class="card-title"><span style="display: inline">
 Spezifische Scheitelpunktform
 </span></div></div>
@@ -282,7 +289,7 @@ Spezifische Scheitelpunktform
     </span>
 </bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
 </div><div class="bslib-grid" style="display: grid; grid-template-rows: minmax(3em, max-content) minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
-<div class="card flow bslib-card html-fill-container" data-title="Parameter" data-fill="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card flow bslib-card html-fill-container" data-fill="false" data-title="Parameter" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
 <div class="card-header"><div class="card-title"><span style="display: inline">
 Parameter
 </span></div></div>

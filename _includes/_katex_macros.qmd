@@ -1,3 +1,4 @@
+::: {.content-hidden unless-meta="has-math"}
 
 ::: {.hidden}
 
@@ -9,6 +10,7 @@ $$
 <!-- Physical units -->
 $$
 \gdef\celsius{\unit{°C}}
+\gdef\gram{\unit{g}}
 \gdef\joule{\unit{J}}
 \gdef\kelvin{\unit{K}}
 \gdef\kilogram{\unit{kg}}
@@ -18,6 +20,10 @@ $$
 \gdef\mole{\unit{mol}}
 \gdef\newton{\unit{N}}
 \gdef\pascal{\unit{Pa}}
+$$
+<!-- Prefixed units -->
+$$
+\gdef\kilojoule{\unit{k}\joule}
 $$
 <!-- Exponentiated units -->
 $$
@@ -32,7 +38,12 @@ $$
 \gdef\jouleperkelvin{\frac{\joule}{\kelvin}}
 \gdef\jouleperkilogramperkelvin{\frac{\joule}{\kilogram\,\kelvin}}
 \gdef\joulepermoleperkelvin{\frac{\joule}{\mole\,\kelvin}}
+\gdef\kilojouleperkilogram{\frac{\kilojoule}{\kilogram}}
+\gdef\kilojouleperkelvin{\frac{\kilojoule}{\kelvin}}
+\gdef\kilojouleperkilogramperkelvin{\frac{\kilojoule}{\kilogram\,\kelvin}}
+\gdef\kilojoulepermoleperkelvin{\frac{\kilojoule}{\mole\,\kelvin}}
 $$
 
 :::
 
+:::

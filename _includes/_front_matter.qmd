@@ -19,6 +19,10 @@ format:
         css: style/_style.css
         embed-resources: false
         self-contained-math: false
-filters:
-  - highlight-text
+has-fontawesome: false
+has-math: true
+has-rating: false
+show-rating: false
+# filters:
+#   - highlight-text
 ---
